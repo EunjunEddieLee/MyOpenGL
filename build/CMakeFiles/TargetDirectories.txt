@@ -1,0 +1,3 @@
+C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/MyOpenGL.dir
+C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/ZERO_CHECK.dir

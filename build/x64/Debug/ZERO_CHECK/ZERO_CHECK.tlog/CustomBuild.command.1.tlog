@@ -1,0 +1,10 @@
+^C:\USERS\ALOHA\DESKTOP\MYOPENGL\BUILD\CMAKEFILES\FB358AE5972C7F7402FDB2DE76096821\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aloha/Desktop/MyOpenGL -BC:/Users/aloha/Desktop/MyOpenGL/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/aloha/Desktop/MyOpenGL/build/MyOpenGL.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
