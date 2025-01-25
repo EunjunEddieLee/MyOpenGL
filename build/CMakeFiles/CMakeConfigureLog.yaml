@@ -24,7 +24,7 @@ events:
       The output was:
       0
       msbuild 踰꾩쟾 17.12.12+1cce77968(.NET Framework??
-      鍮뚮뱶 ?쒖옉: 2025-01-24 ?ㅽ썑 5:28:02
+      鍮뚮뱶 ?쒖옉: 2025-01-25 ?ㅽ썑 1:46:49
       
       1 ?몃뱶??"C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\3.31.4\\CompilerIdC\\CompilerIdC.vcxproj" ?꾨줈?앺듃(湲곕낯 ?\xc2\x80???낅땲??
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           寃쎄퀬 0媛?
           ?ㅻ쪟 0媛?
       
-      寃쎄낵 ?쒓컙: 00:00:02.19
+      寃쎄낵 ?쒓컙: 00:00:02.20
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -79,7 +79,7 @@ events:
       The output was:
       0
       msbuild 踰꾩쟾 17.12.12+1cce77968(.NET Framework??
-      鍮뚮뱶 ?쒖옉: 2025-01-24 ?ㅽ썑 5:28:05
+      鍮뚮뱶 ?쒖옉: 2025-01-25 ?ㅽ썑 1:46:52
       
       1 ?몃뱶??"C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\3.31.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ?꾨줈?앺듃(湲곕낯 ?\xc2\x80???낅땲??
       PrepareForBuild:
@@ -108,7 +108,7 @@ events:
           寃쎄퀬 0媛?
           ?ㅻ쪟 0媛?
       
-      寃쎄낵 ?쒓컙: 00:00:02.10
+      寃쎄낵 ?쒓컙: 00:00:01.96
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -127,8 +127,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-0frqa8"
-      binary: "C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-0frqa8"
+      source: "C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-ut8spm"
+      binary: "C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-ut8spm"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -137,40 +137,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-0frqa8'
+        Change Dir: 'C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-ut8spm'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a3e0f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3c8c1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         msbuild 踰꾩쟾 17.12.12+1cce77968(.NET Framework??
-        鍮뚮뱶 ?쒖옉: 2025-01-24 ?ㅽ썑 5:28:08
+        鍮뚮뱶 ?쒖옉: 2025-01-25 ?ㅽ썑 1:46:55
         
-        1 ?몃뱶??"C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0frqa8\\cmTC_a3e0f.vcxproj" ?꾨줈?앺듃(湲곕낯 ?\xc2\x80???낅땲??
+        1 ?몃뱶??"C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ut8spm\\cmTC_3c8c1.vcxproj" ?꾨줈?앺듃(湲곕낯 ?\xc2\x80???낅땲??
         PrepareForBuild:
-          "cmTC_a3e0f.dir\\Debug\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_3c8c1.dir\\Debug\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
           援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇?\xc2\x80 ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜?\xc2\x80 https://aka.ms/cpp/structured-output??李몄“?섏꽭??
-          "C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0frqa8\\Debug\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
-          "cmTC_a3e0f.dir\\Debug\\cmTC_a3e0f.tlog\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+          "C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ut8spm\\Debug\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_3c8c1.dir\\Debug\\cmTC_3c8c1.tlog\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
         InitializeBuildStatus:
-          "AlwaysCreate"??媛\xc2\x80) 吏\xc2\x80?뺣릺?덇린 ?뚮Ц??"cmTC_a3e0f.dir\\Debug\\cmTC_a3e0f.tlog\\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
-          "cmTC_a3e0f.dir\\Debug\\cmTC_a3e0f.tlog\\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+          "AlwaysCreate"??媛\xc2\x80) 吏\xc2\x80?뺣릺?덇린 ?뚮Ц??"cmTC_3c8c1.dir\\Debug\\cmTC_3c8c1.tlog\\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_3c8c1.dir\\Debug\\cmTC_3c8c1.tlog\\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a3e0f.dir\\Debug\\\\" /Fd"cmTC_a3e0f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3c8c1.dir\\Debug\\\\" /Fd"cmTC_3c8c1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.42.34436(x64)
           Copyright (c) Microsoft Corporation. All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a3e0f.dir\\Debug\\\\" /Fd"cmTC_a3e0f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3c8c1.dir\\Debug\\\\" /Fd"cmTC_3c8c1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0frqa8\\Debug\\cmTC_a3e0f.exe" /INCREMENTAL /ILK:"cmTC_a3e0f.dir\\Debug\\cmTC_a3e0f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-0frqa8/Debug/cmTC_a3e0f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-0frqa8/Debug/cmTC_a3e0f.lib" /MACHINE:X64  /machine:x64 cmTC_a3e0f.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_a3e0f.vcxproj -> C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0frqa8\\Debug\\cmTC_a3e0f.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ut8spm\\Debug\\cmTC_3c8c1.exe" /INCREMENTAL /ILK:"cmTC_3c8c1.dir\\Debug\\cmTC_3c8c1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-ut8spm/Debug/cmTC_3c8c1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-ut8spm/Debug/cmTC_3c8c1.lib" /MACHINE:X64  /machine:x64 cmTC_3c8c1.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_3c8c1.vcxproj -> C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ut8spm\\Debug\\cmTC_3c8c1.exe
         FinalizeBuildStatus:
-          "cmTC_a3e0f.dir\\Debug\\cmTC_a3e0f.tlog\\unsuccessfulbuild" ?뚯씪????젣?섍퀬 ?덉뒿?덈떎.
-          "cmTC_a3e0f.dir\\Debug\\cmTC_a3e0f.tlog\\cmTC_a3e0f.lastbuildstate"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
-        "C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0frqa8\\cmTC_a3e0f.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ?\xc2\x80??.
+          "cmTC_3c8c1.dir\\Debug\\cmTC_3c8c1.tlog\\unsuccessfulbuild" ?뚯씪????젣?섍퀬 ?덉뒿?덈떎.
+          "cmTC_3c8c1.dir\\Debug\\cmTC_3c8c1.tlog\\cmTC_3c8c1.lastbuildstate"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+        "C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ut8spm\\cmTC_3c8c1.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ?\xc2\x80??.
         
         鍮뚮뱶?덉뒿?덈떎.
             寃쎄퀬 0媛?
             ?ㅻ쪟 0媛?
         
-        寃쎄낵 ?쒓컙: 00:00:02.21
+        寃쎄낵 ?쒓컙: 00:00:01.73
         
       exitCode: 0
   -
@@ -210,8 +210,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-wqfi7u"
-      binary: "C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-wqfi7u"
+      source: "C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-1un9qc"
+      binary: "C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-1un9qc"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -221,40 +221,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-wqfi7u'
+        Change Dir: 'C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-1un9qc'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_24ece.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e8e7f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         msbuild 踰꾩쟾 17.12.12+1cce77968(.NET Framework??
-        鍮뚮뱶 ?쒖옉: 2025-01-24 ?ㅽ썑 5:28:11
+        鍮뚮뱶 ?쒖옉: 2025-01-25 ?ㅽ썑 1:46:58
         
-        1 ?몃뱶??"C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wqfi7u\\cmTC_24ece.vcxproj" ?꾨줈?앺듃(湲곕낯 ?\xc2\x80???낅땲??
+        1 ?몃뱶??"C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1un9qc\\cmTC_e8e7f.vcxproj" ?꾨줈?앺듃(湲곕낯 ?\xc2\x80???낅땲??
         PrepareForBuild:
-          "cmTC_24ece.dir\\Debug\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_e8e7f.dir\\Debug\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
           援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇?\xc2\x80 ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜?\xc2\x80 https://aka.ms/cpp/structured-output??李몄“?섏꽭??
-          "C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wqfi7u\\Debug\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
-          "cmTC_24ece.dir\\Debug\\cmTC_24ece.tlog\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+          "C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1un9qc\\Debug\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_e8e7f.dir\\Debug\\cmTC_e8e7f.tlog\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
         InitializeBuildStatus:
-          "AlwaysCreate"??媛\xc2\x80) 吏\xc2\x80?뺣릺?덇린 ?뚮Ц??"cmTC_24ece.dir\\Debug\\cmTC_24ece.tlog\\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
-          "cmTC_24ece.dir\\Debug\\cmTC_24ece.tlog\\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+          "AlwaysCreate"??媛\xc2\x80) 吏\xc2\x80?뺣릺?덇린 ?뚮Ц??"cmTC_e8e7f.dir\\Debug\\cmTC_e8e7f.tlog\\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_e8e7f.dir\\Debug\\cmTC_e8e7f.tlog\\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_24ece.dir\\Debug\\\\" /Fd"cmTC_24ece.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_e8e7f.dir\\Debug\\\\" /Fd"cmTC_e8e7f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.42.34436(x64)
           Copyright (c) Microsoft Corporation. All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_24ece.dir\\Debug\\\\" /Fd"cmTC_24ece.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_e8e7f.dir\\Debug\\\\" /Fd"cmTC_e8e7f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wqfi7u\\Debug\\cmTC_24ece.exe" /INCREMENTAL /ILK:"cmTC_24ece.dir\\Debug\\cmTC_24ece.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-wqfi7u/Debug/cmTC_24ece.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-wqfi7u/Debug/cmTC_24ece.lib" /MACHINE:X64  /machine:x64 cmTC_24ece.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_24ece.vcxproj -> C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wqfi7u\\Debug\\cmTC_24ece.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1un9qc\\Debug\\cmTC_e8e7f.exe" /INCREMENTAL /ILK:"cmTC_e8e7f.dir\\Debug\\cmTC_e8e7f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-1un9qc/Debug/cmTC_e8e7f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/CMakeScratch/TryCompile-1un9qc/Debug/cmTC_e8e7f.lib" /MACHINE:X64  /machine:x64 cmTC_e8e7f.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_e8e7f.vcxproj -> C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1un9qc\\Debug\\cmTC_e8e7f.exe
         FinalizeBuildStatus:
-          "cmTC_24ece.dir\\Debug\\cmTC_24ece.tlog\\unsuccessfulbuild" ?뚯씪????젣?섍퀬 ?덉뒿?덈떎.
-          "cmTC_24ece.dir\\Debug\\cmTC_24ece.tlog\\cmTC_24ece.lastbuildstate"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
-        "C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wqfi7u\\cmTC_24ece.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ?\xc2\x80??.
+          "cmTC_e8e7f.dir\\Debug\\cmTC_e8e7f.tlog\\unsuccessfulbuild" ?뚯씪????젣?섍퀬 ?덉뒿?덈떎.
+          "cmTC_e8e7f.dir\\Debug\\cmTC_e8e7f.tlog\\cmTC_e8e7f.lastbuildstate"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+        "C:\\Users\\aloha\\Desktop\\MyOpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1un9qc\\cmTC_e8e7f.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ?\xc2\x80??.
         
         鍮뚮뱶?덉뒿?덈떎.
             寃쎄퀬 0媛?
             ?ㅻ쪟 0媛?
         
-        寃쎄낵 ?쒓컙: 00:00:02.27
+        寃쎄낵 ?쒓컙: 00:00:02.11
         
       exitCode: 0
   -
