@@ -6,7 +6,7 @@ cmake_minimum_required(VERSION 3.13)
 set(PROJECT_NAME cmake_practice_example)
 set(CMAKE_CXX_STANDARD 17)
 
-set(WINDOW_NAME "Hellom OpenGL!")
+set(WINDOW_NAME "Hello OpenGL!")
 set(WINDOW_WIDTH 960)
 set(WINDOW_HEIGHT 540)
 

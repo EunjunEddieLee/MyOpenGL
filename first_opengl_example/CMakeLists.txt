@@ -3,10 +3,10 @@ add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/utf-8>")
 
 cmake_minimum_required(VERSION 3.13)
 
-set(PROJECT_NAME MyOpenGL)
+set(PROJECT_NAME first_opengl_example)
 set(CMAKE_CXX_STANDARD 17)
 
-set(WINDOW_NAME "Hellom OpenGL!")
+set(WINDOW_NAME "First OpenGL Example")
 set(WINDOW_WIDTH 960)
 set(WINDOW_HEIGHT 540)
 
