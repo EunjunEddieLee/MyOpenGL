@@ -41,4 +41,5 @@ C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/3.31.4/CMakeCCompiler.cmake
 C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/3.31.4/CMakeCXXCompiler.cmake
 C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/3.31.4/CMakeRCCompiler.cmake
 C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/3.31.4/CMakeSystem.cmake
-C:/Users/aloha/Desktop/MyOpenGL/build/dep-spdlog-prefix/tmp/dep-spdlog-mkdirs.cmake
+C:/Users/aloha/Desktop/MyOpenGL/build/dep_glfw-prefix/tmp/dep_glfw-mkdirs.cmake
+C:/Users/aloha/Desktop/MyOpenGL/build/dep_spdlog-prefix/tmp/dep_spdlog-mkdirs.cmake

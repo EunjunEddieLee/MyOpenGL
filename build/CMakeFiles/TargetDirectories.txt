@@ -1,4 +1,5 @@
 C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/MyOpenGL.dir
-C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/dep-spdlog.dir
+C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/dep_spdlog.dir
+C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/dep_glfw.dir
 C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/ALL_BUILD.dir
 C:/Users/aloha/Desktop/MyOpenGL/build/CMakeFiles/ZERO_CHECK.dir
