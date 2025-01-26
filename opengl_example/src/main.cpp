@@ -1,4 +1,5 @@
 #include "common.h"
+#include "shader.h"
 
 #include <spdlog/spdlog.h>
 #include <glad/glad.h> // GLFW library 전에 include
@@ -81,6 +82,13 @@ int main(int argc, const char** argv) {
   }
   auto glVersion = glGetString(GL_VERSION);
   SPDLOG_INFO("OpenGL context version: {}", reinterpret_cast<const char*>(glVersion));
+  // reinterpret_cast<const char*> : error 해결용
+
+  // OpenGL 함수 로딩 후에야 shader 불러오기 위한 함수들 사용 가능
+  auto vertexShader = Shader::CreateFromFile("./shader/simple.vs", GL_VERTEX_SHADER);
+  auto fragmentShader = Shader::CreateFromFile("./shader/simple.fs", GL_FRAGMENT_SHADER);
+  SPDLOG_INFO("vertex shader id: {}", vertexShader->Get());
+  SPDLOG_INFO("fragment shader id: {}", fragmentShader->Get());
 
   OnFrameBufferSizeChange(window, WINDOW_WIDTH, WINDOW_HEIGHT);
   glfwSetFramebufferSizeCallback(window, OnFrameBufferSizeChange);
