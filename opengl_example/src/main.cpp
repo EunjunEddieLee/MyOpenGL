@@ -26,6 +26,30 @@
       glClear()
 */
 
+/*
+** OpenGL을 이용하여 삼각형을 그리는 과정 **
+  - shader object 생성 / 소스 컴파일
+  - program object 생성 / shader link (vs, fs 들)
+  - VAO: VBO 구조에 대한 description, 바인딩 된 VBO, EBO를 기억
+  - VBO: 정점 데이터를 GPU 메모리 상에 위치시킨 object
+  - EBO: 인덱스 데이터를 GPU 메모리 상에 위치시킨 object
+
+  대부분의 OpenGL object는 glBindXX()라는 함수를 이용하여 지금부터 사용할 object를 선택한 뒤 이용한다.
+  - glBindBuffer()
+  - glBindVertexArray()
+  - glBindTexture()
+  - glBindFramebuffer()
+    ...
+*/
+
+/*
+** C++ Code Refactoring
+  Smart pointer의 기능을 이용한 리소스 자동 해제
+  static method / private constructor를 이용한 인스턴스 생성 방식 제한
+  --> 런타임 단계가 아닌 컴파일 단계에서 에러를 검출할 수 있도록
+  private member 설정을 통한 수정 권한 제한
+
+*/
 
 void OnFrameBufferSizeChange(GLFWwindow* window, int width, int height) {
   SPDLOG_INFO("framebuffer size changed: ({} x {})", width, height);
