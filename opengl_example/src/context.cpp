@@ -10,14 +10,14 @@ ContextUPtr Context::Create() {
 bool Context::Init() {
   
   float vertices[] = {
-    // first triangle
-    0.5f, 0.5f, 0.0f, // top right
-    0.5f, -0.5f, 0.0f, // bottom rght
-    -0.5f, 0.5f, 0.0f, // top left
-    //second triangle
-    0.5f, -0.5f, 0.0f, // bottom right
-    -0.5f, -0.5f, 0.0f, // bottom left
-    -0.5f, 0.5f, 0.0f, // top left
+    0.5f, 0.5f, 0.0f, // top right      - 0
+    0.5f, -0.5f, 0.0f, // bottom rght   - 1
+    -0.5f, -0.5f, 0.0f, // bottom left  - 2
+    -0.5f, 0.5f, 0.0f, // top left      - 3
+  };
+  uint32_t indices[] = {
+    0, 1, 3, // first triangle
+    1, 2, 3, // second triangle
   };
 
   /*
@@ -53,16 +53,26 @@ bool Context::Init() {
     - offset: 첫 정점의 해당 attribute 까지의 간격 (byte 단위)
 
   순서 주의 - VAO binding -> VBO binding -> vertex attribute setting
+  --------------------------------------------------
+  ** Element Buffer Object (EBO)
+    정점의 인덱스를 저장할 수 있는 버퍼 (= 인덱스 버퍼)
+    정점 정보와 별개로 정점의 인덱스로만 구성된 삼각형 정보를 전달 가능
+    indexed drawing
+
   */
   glGenVertexArrays(1, &m_vertexArrayObject);
   glBindVertexArray(m_vertexArrayObject);
   //vao 생성 후에 buffer를 만들어야 연결 가능
   glGenBuffers(1, &m_vertexBuffer);
   glBindBuffer(GL_ARRAY_BUFFER, m_vertexBuffer);
-  glBufferData(GL_ARRAY_BUFFER, sizeof(float) * 18, vertices, GL_STATIC_DRAW);
+  glBufferData(GL_ARRAY_BUFFER, sizeof(float) * 12, vertices, GL_STATIC_DRAW);
 
   glEnableVertexAttribArray(0);
   glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 3, 0);
+
+  glGenBuffers(1, &m_indexBuffer);
+  glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_indexBuffer);
+  glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(uint32_t) * 6, indices, GL_STATIC_DRAW);
 
 
   // OpenGL 함수 로딩 후에야 shader 불러오기 위한 함수들 사용 가능
@@ -88,12 +98,19 @@ bool Context::Init() {
 glDrawArray(primitive, offset, count)
   - 현재 설정된 program, VBO, VAO로 그림을 그린다
   - primitive: 그리고자 하는 primitive 타입
-  - offset: 첫 정점의 index
+  - offset: 그리고자 하는 첫 정점의 index
   - count: 몇 개의 정점이 있는가
+
+glDrawElements(primitive, count, type, pointer/offset)
+  - 현재 바인딩된 VAO, VBO, EBO 바탕으로 그림
+  - primitive: 그려낼 기본 primitive 타입
+  - count: 그리고자 하는 EBO 내 index의 개수
+  - type: index의 데이터형
+  - pointer/offset: 그리고자 하는 EBO의 첫 데이터로부터의 오프셋
 */
 void Context::Render() {
   glClear(GL_COLOR_BUFFER_BIT); // 프레임 색상 버퍼 클리어
 
   glUseProgram(m_program->Get()); 
-  glDrawArrays(GL_TRIANGLES, 0, 6);
+  glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 }
