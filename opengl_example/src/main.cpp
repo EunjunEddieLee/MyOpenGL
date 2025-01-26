@@ -1,5 +1,4 @@
-#include "common.h"
-#include "shader.h"
+#include "context.h"
 
 #include <spdlog/spdlog.h>
 #include <glad/glad.h> // GLFW library 전에 include
@@ -84,11 +83,12 @@ int main(int argc, const char** argv) {
   SPDLOG_INFO("OpenGL context version: {}", reinterpret_cast<const char*>(glVersion));
   // reinterpret_cast<const char*> : error 해결용
 
-  // OpenGL 함수 로딩 후에야 shader 불러오기 위한 함수들 사용 가능
-  auto vertexShader = Shader::CreateFromFile("./shader/simple.vs", GL_VERTEX_SHADER);
-  auto fragmentShader = Shader::CreateFromFile("./shader/simple.fs", GL_FRAGMENT_SHADER);
-  SPDLOG_INFO("vertex shader id: {}", vertexShader->Get());
-  SPDLOG_INFO("fragment shader id: {}", fragmentShader->Get());
+  auto context = Context::Create();
+  if (!context) {
+    SPDLOG_ERROR("failed to create context");
+    glfwTerminate();
+    return -1;
+  }
 
   OnFrameBufferSizeChange(window, WINDOW_WIDTH, WINDOW_HEIGHT);
   glfwSetFramebufferSizeCallback(window, OnFrameBufferSizeChange);
@@ -99,14 +99,13 @@ int main(int argc, const char** argv) {
   while (!glfwWindowShouldClose(window)) {
     glfwPollEvents();
     
-    // 화면 클리어
-    glClearColor(0.0f, 0.1f, 0.2f, 0.3f); // 컬러 프레임버퍼 화면을 클리어 할 색상 지정
-    glClear(GL_COLOR_BUFFER_BIT); // 프레임 버퍼 클리어
+
+    context->Render();
     
     // 클리어 된 화면 보이기
     glfwSwapBuffers(window);
-    /* 그림 그려지는 원리 : front/back 두 buffer가 존재. 그림이 그려지는 과정은 back buffer에서 진행(지저분) 그림이 완성되면 swapBuffer를 통해 front, back buffer swap */
   }
+  context.reset();
 
   glfwTerminate();
   return 0;
