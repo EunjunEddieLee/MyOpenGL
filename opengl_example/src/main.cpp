@@ -72,7 +72,7 @@ void OnKeyEvent(GLFWwindow* window, int key, int scancode, int action, int mods)
 
 
 int main(int argc, const char** argv) {
-   SPDLOG_INFO("Start Program");
+  SPDLOG_INFO("Start Program");
 
   // glfw 라이브러리 초기화, 실패하면 에러 출력 후 종료
   SPDLOG_INFO("Initialize glfw");
@@ -118,6 +118,8 @@ int main(int argc, const char** argv) {
   glfwSetFramebufferSizeCallback(window, OnFrameBufferSizeChange);
   glfwSetKeyCallback(window, OnKeyEvent);
 
+
+  glfwSwapInterval(1); // Vsync 활성화 (60FPS로 맞추기)
   // glfw 루프 실행, 윈도우 close 버튼을 누르면 정상 종료
   SPDLOG_INFO("Start main loop");
   while (!glfwWindowShouldClose(window)) {
@@ -131,6 +133,7 @@ int main(int argc, const char** argv) {
   }
   context.reset();
 
+  glfwSwapInterval(0);
   glfwTerminate();
   return 0;
 }
