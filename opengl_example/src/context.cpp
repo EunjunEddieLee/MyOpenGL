@@ -63,6 +63,17 @@ bool Context::Init() {
     정점의 인덱스를 저장할 수 있는 버퍼 (= 인덱스 버퍼)
     정점 정보와 별개로 정점의 인덱스로만 구성된 삼각형 정보를 전달 가능
     indexed drawing
+  --------------------------------------------------
+  glGenTexture(): OpenGL texture object 생성
+  glBindTexture(): 사용하고자 하는 텍스처 바인딩
+  glTexParameteri(): 텍스처 필터 / 래핑 방식 등 파라미터 설정
+
+  glTexImage2D(target, level, internalFormat, width, height, border, format, type, data)
+  -> 바인딩된 텍스처의 크기/픽셀 포맷을 설정하고 GPU에 이미지 데이터를 복사
+    - target: 대상이 될 바인딩 텍스처
+    - level: 설정할 텍스처 레벨. 0레벨이 base
+    - internalFormat: 텍스처의 픽셀 포맷
+
 
   */
 
@@ -77,8 +88,8 @@ bool Context::Init() {
   m_indexBuffer = Buffer::CreateWithData(GL_ELEMENT_ARRAY_BUFFER, GL_STATIC_DRAW, indices, sizeof(uint32_t) * 6);
 
   // OpenGL 함수 로딩 후에야 shader 불러오기 위한 함수들 사용 가능
-  ShaderPtr vertShader = Shader::CreateFromFile("./shader/per_vertex_color.vs", GL_VERTEX_SHADER);
-  ShaderPtr fragShader = Shader::CreateFromFile("./shader/per_vertex_color.fs", GL_FRAGMENT_SHADER);
+  ShaderPtr vertShader = Shader::CreateFromFile("./shader/texture.vs", GL_VERTEX_SHADER);
+  ShaderPtr fragShader = Shader::CreateFromFile("./shader/texture.fs", GL_FRAGMENT_SHADER);
   if (!vertShader || !fragShader)
     return false;
   SPDLOG_INFO("vertex shader id: {}", vertShader->Get());
@@ -88,31 +99,34 @@ bool Context::Init() {
   if (!m_program)
     return false;
   SPDLOG_INFO("prigram id: {}", m_program->Get());
-
-  // // shader에 uniform variable 지정, 값 전달
-  // auto loc = glGetUniformLocation(m_program->Get(), "color");
-  // m_program->Use();
-  // glUniform4f(loc, 1.0f, 1.0f, 0.0f, 1.0f);
   
   // 화면 클리어
   glClearColor(0.0f, 0.1f, 0.2f, 0.3f); // 컬러 프레임버퍼 화면을 클리어 할 색상 지정
   
+
   auto image = Image::Load("./image/container.jpg");
   if (!image)
     return false;
   SPDLOG_INFO("image: {}x{}, {} channels",
     image->GetWidth(), image->GetHeight(), image->GetChannelCount());
+  m_texture = Texture::CreateFromImage(image.get());
 
-  glGenTextures(1, &m_texture);
-  glBindTexture(GL_TEXTURE_2D, m_texture);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+  auto image2 = Image::Load("./image/awesomeface.png");
+  if (!image2)
+    return false;
+  SPDLOG_INFO("image2: {}x{}, {} channels",
+    image2->GetWidth(), image2->GetHeight(), image2->GetChannelCount());
+  m_texture2 = Texture::CreateFromImage(image2.get());
 
-  glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB,
-    image->GetWidth(), image->GetHeight(), 0,
-    GL_RGB, GL_UNSIGNED_BYTE, image->GetData());
+  // 두 개 이상의 이미지로 텍스처를 만드려면 텍스처 슬롯을 이용해야 한다.
+  glActiveTexture(GL_TEXTURE0);
+  glBindTexture(GL_TEXTURE_2D, m_texture->Get());
+  glActiveTexture(GL_TEXTURE1);
+  glBindTexture(GL_TEXTURE_2D, m_texture2->Get());
+
+  m_program->Use();
+  glUniform1i(glGetUniformLocation(m_program->Get(), "tex"), 0);
+  glUniform1i(glGetUniformLocation(m_program->Get(), "tex2"), 1);
 
   return true;
 }
