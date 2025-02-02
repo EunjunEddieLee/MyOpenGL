@@ -4,6 +4,7 @@
   },
   "files.associations": {
     "memory": "cpp",
-    "charconv": "cpp"
+    "charconv": "cpp",
+    "xstring": "cpp"
   }
 }
