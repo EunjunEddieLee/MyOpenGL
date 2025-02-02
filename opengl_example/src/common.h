@@ -7,6 +7,9 @@
 #include <glad/glad.h>
 #include <glfw/glfw3.h>
 #include <spdlog/spdlog.h>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 // CLASS_PTR이라는 함수를 define (klassName이 파라미터, 아래 줄들이 함수가 하는 명령)
 #define CLASS_PTR(klassName) \
