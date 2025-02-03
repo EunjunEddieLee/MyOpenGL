@@ -53,7 +53,27 @@
 
 void OnFrameBufferSizeChange(GLFWwindow* window, int width, int height) {
   SPDLOG_INFO("framebuffer size changed: ({} x {})", width, height);
-  glViewport(0, 0, width, height);
+  // ** Typecast in C, C++
+  // int i = (int)0.0f; // C
+  // 
+  // int j = static_cast<int>(0.0f); // C++
+  // dynamic_cast<>
+  // const_cast<>
+  // reinterpret_cast<>
+  auto context = reinterpret_cast<Context*>(glfwGetWindowUserPointer(window));
+  context->Reshape(width, height);
+}
+
+void OnCursorPos(GLFWwindow* window, double x, double y) {
+  auto context = (Context*)glfwGetWindowUserPointer(window);
+  context->MouseMove(x, y);
+}
+
+void OnMouseButton(GLFWwindow* window, int button, int action, int modifier) {
+  auto context = (Context*)glfwGetWindowUserPointer(window);
+  double x, y;
+  glfwGetCursorPos(window, &x, &y);
+  context->MouseButton(button, action, x, y);
 }
 
 void OnKeyEvent(GLFWwindow* window, int key, int scancode, int action, int mods) {
@@ -113,10 +133,13 @@ int main(int argc, const char** argv) {
     glfwTerminate();
     return -1;
   }
+  glfwSetWindowUserPointer(window, context.get()); // glfw User Pointer
 
   OnFrameBufferSizeChange(window, WINDOW_WIDTH, WINDOW_HEIGHT);
   glfwSetFramebufferSizeCallback(window, OnFrameBufferSizeChange);
   glfwSetKeyCallback(window, OnKeyEvent);
+  glfwSetCursorPosCallback(window, OnCursorPos);
+  glfwSetMouseButtonCallback(window, OnMouseButton);
 
 
   glfwSwapInterval(1); // Vsync 활성화 (60FPS로 맞추기)
@@ -124,7 +147,8 @@ int main(int argc, const char** argv) {
   SPDLOG_INFO("Start main loop");
   while (!glfwWindowShouldClose(window)) {
     glfwPollEvents();
-    
+
+    context->ProcessInput(window);
 
     context->Render();
     
