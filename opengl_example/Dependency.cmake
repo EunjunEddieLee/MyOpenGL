@@ -73,7 +73,7 @@ ExternalProject_Add(
 )
 set(DEP_LIST ${DEP_LIST} dep_stb)
 
-#glm
+# glm
 ExternalProject_Add(
   dep_glm
   GIT_REPOSITORY "https://github.com/g-truc/glm"
@@ -89,3 +89,18 @@ ExternalProject_Add(
     ${DEP_INSTALL_DIR}/include/glm
   )
 set(DEP_LIST ${DEP_LIST} dep_glm)
+
+# imgui
+add_library(imgui
+  imgui/imgui_draw.cpp
+  imgui/imgui_tables.cpp
+  imgui/imgui_widgets.cpp
+  imgui/imgui.cpp
+  imgui/imgui_impl_glfw.cpp
+  imgui/imgui_impl_opengl3.cpp
+  )
+target_include_directories(imgui PRIVATE ${DEP_INCLUDE_DIR})
+add_dependencies(imgui ${DEP_LIST})
+set(DEP_INCLUDE_DIR ${DEP_INCLUDE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/imgui)
+set(DEP_LIST ${DEP_LIST} imgui)
+set(DEP_LIBS ${DEP_LIBS} imgui)
